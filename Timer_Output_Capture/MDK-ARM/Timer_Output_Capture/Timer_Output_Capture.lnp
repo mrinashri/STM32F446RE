@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"timer_output_capture\startup_stm32f446xx.o"
+"timer_output_capture\main.o"
+"timer_output_capture\stm32f4xx_it.o"
+"timer_output_capture\stm32f4xx_hal_msp.o"
+"timer_output_capture\stm32f4xx_hal_tim.o"
+"timer_output_capture\stm32f4xx_hal_tim_ex.o"
+"timer_output_capture\stm32f4xx_hal_rcc.o"
+"timer_output_capture\stm32f4xx_hal_rcc_ex.o"
+"timer_output_capture\stm32f4xx_hal_flash.o"
+"timer_output_capture\stm32f4xx_hal_flash_ex.o"
+"timer_output_capture\stm32f4xx_hal_flash_ramfunc.o"
+"timer_output_capture\stm32f4xx_hal_gpio.o"
+"timer_output_capture\stm32f4xx_hal_dma_ex.o"
+"timer_output_capture\stm32f4xx_hal_dma.o"
+"timer_output_capture\stm32f4xx_hal_pwr.o"
+"timer_output_capture\stm32f4xx_hal_pwr_ex.o"
+"timer_output_capture\stm32f4xx_hal_cortex.o"
+"timer_output_capture\stm32f4xx_hal.o"
+"timer_output_capture\stm32f4xx_hal_exti.o"
+"timer_output_capture\stm32f4xx_hal_uart.o"
+"timer_output_capture\system_stm32f4xx.o"
+--strict --scatter "Timer_Output_Capture\Timer_Output_Capture.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Timer_Output_Capture.map" -o Timer_Output_Capture\Timer_Output_Capture.axf
